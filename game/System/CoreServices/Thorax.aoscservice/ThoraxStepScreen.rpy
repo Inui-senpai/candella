@@ -20,10 +20,11 @@ screen ThoraxStepScreen(name, detail, show_input=False):
     default return_action = [Hide("ThoraxStepScreen"), Return(None)]
 
     python:
-        if show_input and input_result != "":
-            return_action = [Hide("ThoraxStepScreen"), Return(input_result)]
-        elif show_input and input_result == "":
-            return_action = NullAction()
+        if show_input:
+            if input_result != "":
+                return_action = [Hide("ThoraxStepScreen"), Return(input_result)]
+            else:
+                return_action = NullAction()
 
     key "K_RETURN" action return_action
 
