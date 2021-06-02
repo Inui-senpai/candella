@@ -6,7 +6,7 @@
 # Copyright © 2019 Marquis Kurt. All rights reserved.
 #
 
-style ASInterfaceRadio_button is bui_button
+style ASInterfaceRadio_button is gui_button
 
 style ASInterfaceRadio_button:
     foreground AS_FRAMEWORK_DIR("ScreenKit") + "Resources/Radios/Idle.png"
