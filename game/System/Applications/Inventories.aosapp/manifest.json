@@ -1,10 +1,10 @@
 {
   "name": "inventories",
-  "productName": "Inventories",
+  "productName": "Инвентари",
   "id": "dev.unscriptedvn.candella.inventories",
   "author": "Project Alice <hello@aliceos.app>, Unscripted VN Team <unscriptedvn@marquiskurt.net>",
   "version": "1.1.0",
-  "description": "View, use, and manage items you receive in-game with Inventories, a simple app designed for make item inventory systems easy.",
+  "description": "Просматривайте, используйте и управляйте предметами, которые вы получаете в игре, с помощью Инвентарей - простого приложения, предназначенного для упрощения системы инвентаризации предметов.",
   "license": "BSD-2-Clause",
   "permissions": ["notifications"],
   "requisites": ["AppKit", "Observable", "NotificationKit", "ScreenKit"]
