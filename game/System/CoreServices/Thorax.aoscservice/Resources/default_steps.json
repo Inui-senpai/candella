@@ -1,18 +1,18 @@
 [
     {
-        "name": "Welcome to Candella",
-        "detail": "Welcome to the Candella platform. We just need to take care of a couple of things before we can begin.",
+        "name": "Добро пожаловать в систему Candella",
+        "detail": "Вас приветствует мастер установки системы Candella. Перед тем, как мы начнём, нам нужно разобраться с парой вещей.",
         "keyboard_input": false
     },
     {
-        "name": "Set up an account",
-        "detail": "Type in the username you'd like to use when using Candella. This username will be used to create a special user file for you that apps and services can use to customize the Candella experience to you. This username may also be used as your in-game name.",
+        "name": "Настройка учётной записи",
+        "detail": "Введите имя пользователя, которое вы хотели бы использовать при работе с системой Candella. Это имя пользователя будет использовано для создания особого файла пользователя, который приложения и службы смогут использовать для подстраивания опыта работы с системой Candella под вас. Это имя пользователя также может использоваться как ваше имя в игре.",
         "keyboard_input": true,
         "callback": "create_user"
     },
     {
-        "name": "You're all set!",
-        "detail": "Candella is ready to be used. We hope you like Candella as much as we did making it.",
+        "name": "Всё готово!",
+        "detail": "Система Candella готова к использованию. Мы надеемся, что система Candella понравится вам так же сильно, как и нам во время её разработки.",
         "keyboard_input": false,
         "callback": "complete"
     }
