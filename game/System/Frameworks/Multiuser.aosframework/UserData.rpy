@@ -104,7 +104,7 @@ init python:
                 raise CAUserDataPermissionError
             
             if not os.path.isfile(config.savedir + "/.causerland/" + persistent.playername):
-                raise CAUserDataNotFoundError("User file " + persistent.playername + "not found. Re-run Setup.")
+                raise CAUserDataNotFoundError("User file " + persistent.playername + " not found. Re-run Setup.")
             
             try:
                 with open(config.savedir + "/.causerland/" + persistent.playername, 'r') as data_object:
