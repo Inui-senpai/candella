@@ -1,10 +1,10 @@
 {
-    "name": "Multiuser",
+    "name": "Несколько пользователей",
     "id": "dev.unscriptedvn.candella.multiuser",
     "author": "Marquis Kurt <software@marquiskurt.net>",
     "version": "21.01",
     "license": "BSD-2-Clause",
-    "description": "Add multi-user support with custom configuration files.",
+    "description": "Добавление многопользовательской поддержки путём внедрения пользовательских файлов конфигурации.",
     "requisites": [
         "NotificationKit",
         "AppKit",
