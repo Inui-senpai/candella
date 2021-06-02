@@ -62,7 +62,7 @@ init python:
             elif steps and type(steps) is list:
                 procedure = steps
             else:
-                 procedure = self.default_steps
+                procedure = self.default_steps
 
             for step in procedure:
                 result = renpy.call_screen(

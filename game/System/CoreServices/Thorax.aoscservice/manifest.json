@@ -3,7 +3,7 @@
   "id": "dev.unscriptedvn.candella.thorax-setup",
   "author": "Marquis Kurt <unscriptedvn@marquiskurt.net>",
   "version": "0.1.0",
-  "description": "A modular setup assistant for Candella.",
+  "description": "Модульный мастер установки для системы Candella.",
   "license": "MPL-2.0",
   "permissions": ["manage_users"],
   "requisites": ["ServiceKit", "Multiuser"]

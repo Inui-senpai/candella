@@ -20,8 +20,10 @@ screen ThoraxStepScreen(name, detail, show_input=False):
     default return_action = [Hide("ThoraxStepScreen"), Return(None)]
 
     python:
-        if show_input:
+        if show_input and input_result != "":
             return_action = [Hide("ThoraxStepScreen"), Return(input_result)]
+        elif show_input and input_result == "":
+            return_action = NullAction()
 
     key "K_RETURN" action return_action
 
@@ -54,10 +56,10 @@ screen ThoraxStepScreen(name, detail, show_input=False):
                     if show_input:
                         input default "" value ScreenVariableInputValue("input_result")
 
-                    textbutton "Next ›" action return_action:
+                    textbutton "Далее ›" action return_action:
                         xalign 1.0
 
-                    text "Click 'Next' or press Return/Enter on your keyboard to continue.":
+                    text "Нажмите на кнопку «Далее» или на клавишу «Ввод», чтобы продолжить.":
                         xalign 0.5
                         style "thorax_setup_hidden"
 
