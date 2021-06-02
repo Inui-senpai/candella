@@ -15,7 +15,7 @@ init python:
     import gc
     import logging
     from os import listdir, path
-    from time import gmtime, strftime
+    from time import strftime
     from store.CADeprecated import deprecated
     from store import CADesign as design
 
@@ -24,7 +24,7 @@ init python:
         _wall_display_mode = "cover"
         _dock = []
         _drawer_open = False
-        _current_app_name = "Celeste Desktop"
+        _current_app_name = "Рабочий стол Celeste"
         _acct_switcher_open = False
 
         def __init__(self):
@@ -74,7 +74,7 @@ init python:
         @staticmethod
         def current_time():
             """Returns the current time of the system."""
-            return strftime("%I:%M%p")
+            return strftime("%H:%M")
 
         def get_distributor_logo(self):
             if not renpy.loadable("System/Library/Branding/sprite_alt.png"):
@@ -221,7 +221,7 @@ init python:
             if "application_launched" in args:
                 self._current_app_name = kwargs["name"]
             elif "application_terminated" in args:
-                self._current_app_name = "Celeste Desktop"
+                self._current_app_name = "Рабочий стол Celeste"
 
             # Handle app pinning from the App Manager.
             elif "__appman_pin" in args:
