@@ -74,11 +74,11 @@ init python:
                     setup.launch()
                 except NameError:
                     pass
-                try:
-                    clog.debug("Launching AliceOS Setup Assistant.")
-                    ASSetup.startSetup()
-                except:
-                    ASHalt.halt("MISSING_OOBE_SERVICE")
+                # try: <- не совсем уверен, для чего это нужно; Thorax уже представляет собой Мастер установки
+                #     clog.debug("Launching AliceOS Setup Assistant.")
+                #     ASSetup.startSetup()
+                # except:
+                #     ASHalt.halt("MISSING_OOBE_SERVICE")
 
             # Launch apps that have permission to do so.
             for app in self.__get_apps():
