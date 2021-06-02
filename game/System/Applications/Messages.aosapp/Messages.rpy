@@ -19,10 +19,10 @@ init 5 python:
 
         def applicationWillLaunch(self):
             banner = CANotificationBanner(
-                _("Messages app functionality not implemented."),
-                _("You will still be able to receive message notifications from characters in-game.")
+                _("Функциональная часть приложения «Сообщения» не реализована."),
+                _("У вас по-прежнему будет возможность получать уведомления о сообщениях от персонажей в игре.")
             )
-            banner.callback_text = _("Dismiss")
+            banner.callback_text = _("Отклонить")
             self.send_banner("automatic", banner=banner)
 
     messages = ASMessages()
