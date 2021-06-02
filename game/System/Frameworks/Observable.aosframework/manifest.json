@@ -1,9 +1,9 @@
 {
-    "name": "Observable",
+    "name": "Наблюдатель",
     "id": "dev.unscriptedvn.candella.observable",
     "author": "Marquis Kurt <software@marquiskurt.net>",
     "version": "21.01",
     "license": "BSD-2-Clause",
-    "description": "Add observable features to services, apps, and other classes.",
+    "description": "Добавление наблюдаемых функций в службы, приложения и другие классы.",
     "requisites": []
 }
