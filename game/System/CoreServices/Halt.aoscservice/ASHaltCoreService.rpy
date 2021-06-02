@@ -17,19 +17,19 @@ init 5 python:
 
         def _write_halt(self, code=""):
             template = """\
-Candella has encountered an error it couldn't handle and has been shut down to prevent further damage.
-You can search the error in the Error Database at https://errordb.aliceos.app for more information.
+Система Candella столкнулась с проблемой, которую не может обработать, и её работа была завершена для предотвращения дальнейшего ущерба.
+Вы можете найти данную ошибку в Базе данных ошибок на сайте https://errordb.aliceos.app, чтобы узнать больше информации о ней.
 
-This message is usually displayed if Candella could not restart the system for a reason. You can read
-the logs at the listed directory below to follow up on what led to the Stop error.
+Данное сообщение, как правило, выводится на экран, если система Candella не смогла перезапустить систему по какой-то причине. Вы можете прочитать
+файлы логов в нижеуказанной директории, дабы выявить причину возникновения стоп-ошибки.
 
-Log file: %s
+Файл логов: %s
 
-Stop Code: %s
-Candella Version: %s
-Candella Version Build: %s
-Ren'Py Version: %s
-Host Operating System: %s
+Код стоп-ошибки: %s
+Версия Candella: %s
+Сборка версии Candella: %s
+Версия Ren'Py: %s
+Операционная система хоста: %s
             """ % (
                 os.path.join(config.savedir, "candella.log"),
                 code,
