@@ -1,9 +1,8 @@
 # Run the bootloader.
 
 label splashscreen:
-    python:
-        if 'roland' in vars():
-            roland.boot(loader="RolandGraphicalLogomarkLoader", minimum_load_time=3.0)
+    $ quick_menu = False
+    $ roland.boot(loader="RolandGraphicalLogomarkLoader", minimum_load_time=3.0)
     return
 
 # Run the bootloader's shutdown.
