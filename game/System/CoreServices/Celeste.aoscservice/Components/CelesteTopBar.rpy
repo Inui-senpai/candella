@@ -14,8 +14,8 @@ screen CelesteTopBar():
     modal False
     style_prefix "CelesteTopBar"
 
-    default _CurrentTime = "Tue. 9:41 AM"
-    default _Username = "User"
+    default _CurrentTime = "Вт, 09:41"
+    default _Username = "Пользователь"
     default _CurrentApp = ""
 
     python:
