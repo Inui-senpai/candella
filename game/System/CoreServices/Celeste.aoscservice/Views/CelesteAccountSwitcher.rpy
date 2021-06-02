@@ -44,8 +44,8 @@ screen CelesteAccountSwitcher(users):
         has vbox:
             yalign 0.5
 
-            label "Switch user profile"
-            text "Select a user to switch to."
+            label "Смена пользователя"
+            text "Выберите учётную запись, на которую хотите переключиться."
 
             for user in s_users:
                 $ _username = user.display_name
@@ -53,5 +53,5 @@ screen CelesteAccountSwitcher(users):
 
             null height 32
 
-            textbutton "Cancel" action [Return(None)]:
+            textbutton "Отмена" action [Return(None)]:
                 xalign 0.5
