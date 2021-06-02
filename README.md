@@ -5,43 +5,47 @@
 ![Lint Candella Project](https://github.com/UnscriptedVN/candella/workflows/Lint%20Candella%20Project/badge.svg) 
 ![Run Project Tests](https://github.com/UnscriptedVN/candella/workflows/Run%20Project%20Tests/badge.svg)
 
-Candella is a fork of the [AliceOS framework](https://aliceos.app), a Ren'Py framework that provides an operating environment to visual novels. This operating environment includes utilities, classes, and other code that lets developers and players write and use apps designed for the system.
+Candella — это форк [фреймворка AliceOS](https://aliceos.app), созданного на Ren'Py, который поставляет операционную среду в визуальные романы. Эта операционная среда включает в себя утилиты, классы и прочий код, который даёт возможность разработчикам и игрокам писать и использовать приложения, созданные для этой системы.
 
 ![Celeste Shell in Candella](./.github/release.png)
 
-## Differences between AliceOS
+## Отличия от AliceOS
 
-- **Release compatibility**: Candella's release cycle syncs up with feature releases of Unscripted and the Ren'Py SDK, respectively.
-- **Responsive feedback**: AliceOS follows a release schedule and doesn't update as quickly with bug fixes or improvements, Candella gets feedback from the public as well as playtesters in the [Unscripted Playtesting Program][uvn-beta].
-- **Targeted for Unscripted**: Candella will add new features and improvements that will be helpful for Unscripted, such as native support for the NadiaVM language.
-- **Simplified app development**: Candella's application framework extensions make it easier to develop apps quickly without fiddling through delegate calls, and there's a curated project repository that players can download from and where developers can upload releases.
+- **Совместимость релизов**: Цикл релизов системы Candella синхронизируется с обновлениями функций игры "Не по сценарию" и программы Ren'Py SDK соответственно.
+- **Оперативная обратная связь**: Система AliceOS придерживается графика выпуска новых версий и обновляется не так часто с учётом исправлений багов или улучшений, а Candella, в свою очередь, получает отзывы как от публики, так и от тестеров, участвующих в программе [Unscripted Playtesting Program][uvn-beta].
+- **Нацеленность на игру "Не по сценарию"**: Система Candella добавляет новые функции и улучшения, которые будут полезны в игре "Не по сценарию", как, например, нативная поддержка языка NadiaVM.
+- **Упрощённая разработка приложения**: Расширения фреймворка приложений Candella облегчают быструю разработку приложений без необходимости возиться с делегирующими вызовами, также существует курируемый репозиторий проектов, из которого игроки могут скачивать и куда разработчики могут загружать релизы.
 
-## Getting started
+## Первые приготовления
 
-### Quick start: Get Candella
+### Быстрый старт: Получить систему Candella
 
-Unscripted comes bundled with the latest release of Candella and can be copied to any Ren'Py project. In the game's files, copy the 'candella.rpa' archive to your Ren'Py project.
+Игра "Не по сценарию" поставляется вместе с последним релизом системы Candella и может быть скопирован в любой проект на Ren'Py. Откройте директорию файлов игры и скопируйте архив "candella.rpa" в свой проект на Ren'Py.
 
-You can additionally download a release from [the Releases page][releases], as well as [download the project from Itch.io](https://marquiskurt.itch.io/candella).
+Также вы можете скачать копию на [странице Релизов][releases] и [скачать проект на Itch.io](https://marquiskurt.itch.io/candella).
 
-### Build from source
+### Сборка из исходников
 
-#### Requirements
-- [Ren'Py SDK][renpy] v7.4.0 or greater
+#### Требования
+- [Ren'Py SDK][renpy] версии 7.4.0 или выше
 - Python 3
 - Pipenv
 
-Clone the repository from GitHub, then run `pipenv install -d` in the root of the project to fetch dependencies for making the project.
+Клонируйте репозиторий с GitHub, затем выполните команду `pipenv install -d` в корневой папке проекта, чтобы получить зависимости для создания проекта.
 
-To build this project, open the Ren'Py Launcher, click "Distribute" and select "Candella System Distributable". The resulting file will be in a ZIP archive with `candella.rpa`.
+Чтобы собрать данный проект, откройте Лаунчер Ren'Py, выберите "Построить дистрибутивы" и выберите "Распространяемый пакет системы Candella". Конечный файл будет упакован в ZIP-архив и иметь название `candella.rpa`.
 
-#### Test-drive features
+#### Тест-драйв функций
 
-If you want to test out some of the features without building anything, clone the repository and launch the project from the Ren'Py launcher.
+Если вы хотите опробовать некоторые из имеющихся функций без необходимости собирать что-либо, клонируйте репозиторий и запустите проект из Лаунчера Ren'Py.
 
-## License
+## Лицензия
 
-Candella is licensed under the BSD-2-Clause license per the licensing of the original AliceOS project.
+Система Candella лицензирована по условиям лицензии BSD-2-Clause согласно условиям лицензирования оригинального проекта AliceOS.
+
+## Дополнительные примечания
+
+Данный проект является полным переводом [оригинального проекта](https://github.com/UnscriptedVN/candella) на русский язык и адаптацией для корректной работы на последней версии Ren'Py (7.4.5.1648). Ошибки и недочёты в локализации прошу оставлять здесь: https://vk.com/topic-165582702_39071884
 
 <!-- Links -->
 
