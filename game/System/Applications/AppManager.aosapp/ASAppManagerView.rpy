@@ -29,7 +29,7 @@ screen ASAppManagerView():
                 xalign 0.5
                 yfit True
 
-                use ASInterfaceTitlebar("App Manager", onClose=[Hide("ASAppManagerView"), appManager.terminate])
+                use ASInterfaceTitlebar("Менеджер приложений", onClose=[Hide("ASAppManagerView"), appManager.terminate])
 
                 hbox:
                     style_prefix "ASAppManager"
@@ -37,7 +37,7 @@ screen ASAppManagerView():
 
                     vbox:
                         spacing 8
-                        label "Applications"
+                        label "Приложения"
 
                         viewport:
                             style_prefix "ASInterfaceScrollbar"
@@ -53,7 +53,7 @@ screen ASAppManagerView():
                     vbox:
                         xfill True
                         if currentAppView == None:
-                            text "Select an app from the left side to view its properties.":
+                            text "Выберите приложение из списка слева, чтобы просмотреть его свойства.":
                                 xalign 0.5
 
 
@@ -70,32 +70,32 @@ screen ASAppManagerView():
                                         style "ASAppManager_DetailedAppName"
                                     text "[currentAppView.bundleAuthor]":
                                         style "ASAppManager_DetailedAppAuthor_text"
-                                    text "Version [currentAppView.bundleVersion] ([currentAppView.bundleId])"
+                                    text "Версия [currentAppView.bundleVersion] ([currentAppView.bundleId])"
                                     null height 8
 
                                     hbox:
                                         spacing 8
 
-                                        textbutton "Launch" action Function(currentAppView.applicationWillLaunch):
+                                        textbutton "Запустить" action Function(currentAppView.applicationWillLaunch):
                                             style "ASInterfacePushButton"
 
                                         vbox:
                                             style_prefix "ASInterfaceCheckbox"
-                                            textbutton "Pin to launcher" action Function(appman._pin_to_shell_dock, app_id=currentAppView.bundleId):
+                                            textbutton "Закрепить в лаунчере" action Function(appman._pin_to_shell_dock, app_id=currentAppView.bundleId):
                                                 selected celeste.app_exists_in_current_launcher(currentAppView.bundleId)
 
                             null height 8
 
                             vbox:
                                 $ currentAppView_description = currentAppView.bundleDescription.strip()
-                                text "About this app":
+                                text "Об этом приложении":
                                     style "ASAppManager_DetailedEmphasis_text"
                                 text "[currentAppView_description]"
                                 null height 16
 
                                 if currentAppView.permissions:
 
-                                    text "Allow this app to:":
+                                    text "Разрешить приложению:":
                                         style "ASAppManager_DetailedEmphasis_text"
 
                                     vbox:
@@ -109,7 +109,7 @@ screen ASAppManagerView():
                                             text "[_desc].":
                                                 style "ASAppManager_text"
                                 else:
-                                    text "This app doesn't require any permissions."
+                                    text "Разрешения для этого приложения не требуются."
 
 screen ASAppManagerDetailButton(app):
     button action SetScreenVariable("currentAppView", app):
@@ -125,4 +125,4 @@ screen ASAppManagerDetailButton(app):
                     _ver = app.bundleVersion
                 text "[_name]":
                     style "ASAppManager_AppName_text"
-                text "v[_ver]"
+                text "вер. [_ver]"
