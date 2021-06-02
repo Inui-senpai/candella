@@ -26,7 +26,7 @@ screen GlossaryAppUIView(glossary):
             ymaximum 450
 
             has vbox:
-                use ASInterfaceTitlebar(_("Glossary"), onClose=[Hide("GlossaryAppUIView"), Function(glossary_app.terminate)])
+                use ASInterfaceTitlebar(_("Словарь"), onClose=[Hide("GlossaryAppUIView"), Function(glossary_app.terminate)])
 
                 viewport:
                     mousewheel True
@@ -38,7 +38,7 @@ screen GlossaryAppUIView(glossary):
                         if glossary:
                             use GlossaryView(glossary=glossary)
                         else:
-                            text _("The glossary is empty or could not be loaded.")
+                            text _("Словарь пуст или не может быть загружен.")
 
 screen GlossaryView(glossary):
     style_prefix "glossary"
