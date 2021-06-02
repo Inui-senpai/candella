@@ -1,9 +1,9 @@
 {
-  "name": "Accounts Service",
+  "name": "Служба учётных записей",
   "id": "dev.unscriptedvn.candella.accounts-service",
   "author": "Marquis Kurt <unscriptedvn@marquiskurt.net>",
   "version": "1.0.0",
-  "description": "Manage multiple user accounts via the Multiuser framework.",
+  "description": "Управление несколькими учётными записями через многопользовательский фреймворк.",
   "license": "MPL-2.0",
   "permissions": ["manage_users"],
   "requisites": ["Multiuser", "ServiceKit"]
