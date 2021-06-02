@@ -18,7 +18,7 @@ init python:
             self.message = message
             self.details = details
             self.callback = callback
-            self.callback_text = "Respond"
+            self.callback_text = "Ответить"
 
 
         def __str__(self):

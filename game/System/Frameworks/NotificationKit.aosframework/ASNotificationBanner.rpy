@@ -6,7 +6,7 @@
 # Copyright © 2019 ProjectAliceDev. All rights reserved.
 #
 
-init screen ASNotificationBanner(applet=None, message, withDetails, r_text="Respond", responseCallback=Return('didClickRespond')):
+init screen ASNotificationBanner(applet=None, message, withDetails, r_text="Ответить", responseCallback=Return('didClickRespond')):
     tag ASNotificationBanner
     zorder 100
     style_prefix "ASNotificationBanner"
@@ -27,7 +27,7 @@ init screen ASNotificationBanner(applet=None, message, withDetails, r_text="Resp
                 )
                 _app_name = (
                     applet.get_name() if isinstance(applet, CAApplication) else applet.bundleName) if applet \
-                    else "Unknown Bundle"
+                    else "Неизвестный пакет"
             hbox:
                 xfill True
 
