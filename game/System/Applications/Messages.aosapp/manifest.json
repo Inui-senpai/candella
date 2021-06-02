@@ -1,10 +1,10 @@
 {
   "name": "messages",
-  "productName": "Messages",
+  "productName": "Сообщения",
   "id": "dev.unscriptedvn.candella.messages",
   "author": "Project Alice <hello@aliceos.app>, Unscripted VN Team <unscriptedvn@marquiskurt.net>",
   "version": "2.1.0",
-  "description": "Send and receive messages from your favorite characters in-game.",
+  "description": "Отправка и получение сообщений между вами и вашими любимыми персонажами в игре.",
   "license": "BSD-2-Clause",
   "permissions": ["notifications"],
   "requisites": ["AppKit", "Observable", "NotificationKit"]
