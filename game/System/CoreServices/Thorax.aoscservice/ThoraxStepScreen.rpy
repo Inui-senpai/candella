@@ -21,7 +21,10 @@ screen ThoraxStepScreen(name, detail, show_input=False):
 
     python:
         if show_input:
-            return_action = [Hide("ThoraxStepScreen"), Return(input_result)]
+            if input_result != "":
+                return_action = [Hide("ThoraxStepScreen"), Return(input_result)]
+            else:
+                return_action = NullAction()
 
     key "K_RETURN" action return_action
 
@@ -66,10 +69,10 @@ screen ThoraxStepScreen(name, detail, show_input=False):
                         input default "" value ScreenVariableInputValue("input_result")
                         null height 48
 
-                    textbutton _("Next ›") action return_action:
+                    textbutton _("Далее ›") action return_action:
                         xalign 1.0
 
-                    text _("Click 'Next' or press Return/Enter on your keyboard to continue."):
+                    text _("Нажмите на кнопку «Далее» или на клавишу «Ввод», чтобы продолжить."):
                         xalign 0.5
                         style "thorax_setup_hidden"
 
