@@ -36,11 +36,11 @@ init python:
             data (AppStorage): An app storage object for this app, or None if the app doesn't need app storage.
         """
 
-        _warn_text = "\n\nThis app is made for the Candella distribution and may not be compatible with AliceOS."
+        _warn_text = "\n\nЭто приложение было создано для дистрибуции системы Candella и может быть не совместимо с AliceOS."
 
         description = ""
         product_name = ""
-        license = "No license provided."
+        license = "Лицензия не предоставлена."
         permissions = []
         data = None
 

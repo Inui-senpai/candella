@@ -27,13 +27,13 @@ init python:
 
         # MARK: Manifest
 
-        bundleName = "Bundle name"
+        bundleName = "Имя пакета"
         bundleId = "dev.unscriptedvn.candella.bundle"
         bundleDir = AS_APPS_DIR + "Bundle/"
-        bundleAuthor = "Author"
+        bundleAuthor = "Автор"
         bundleVersion = "1.0.0"
         bundleDescription = """\
-            No description has been provided.
+            Описание не предоставлено.
         """
 
         icons = {
