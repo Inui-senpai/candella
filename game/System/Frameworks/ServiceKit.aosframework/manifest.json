@@ -4,7 +4,7 @@
     "author": "Project Alice <hello@aliceos.app>, Marquis Kurt <software@marquiskurt.net>",
     "version": "21.01",
     "license": "BSD-2-Clause",
-    "description": "Create core services built into AliceOS/Candella.",
+    "description": "Создание основных служб, встроенных в AliceOS/Candella.",
     "requisites": [
         "NotificationKit",
         "Observable"
