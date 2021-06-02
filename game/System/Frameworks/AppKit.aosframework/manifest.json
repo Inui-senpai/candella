@@ -4,6 +4,6 @@
   "author": "Project Alice <hello@aliceos.app>, Marquis Kurt <software@marquiskurt.net>",
   "version": "21.01",
   "license": "BSD-2-Clause",
-  "description": "Develop apps quickly and easily for AliceOS/Candella.",
+  "description": "Быстро и легко разрабатывайте приложения для AliceOS/Candella.",
   "requisites": ["NotificationKit", "Observable", "Multiuser"]
 }
