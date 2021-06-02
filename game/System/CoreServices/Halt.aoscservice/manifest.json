@@ -1,9 +1,9 @@
 {
-  "name": "Halt Manager",
+  "name": "Менеджер принудительного останова",
   "id": "dev.unscriptedvn.candella.core-services.halt",
   "author": "Project Alice <hello@aliceos.app>, Marquis Kurt <unscriptedvn@marquiskurt.net>",
   "version": "1.1.0",
-  "description": "Safely catch system-level errors and restart Candella.",
+  "description": "Безопасно перехватывает ошибки системного уровня и перезапускает систему Candella.",
   "license": "BSD-2-Clause",
   "permissions": [],
   "requisites": ["ServiceKit"]
