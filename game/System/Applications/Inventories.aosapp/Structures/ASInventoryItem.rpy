@@ -10,7 +10,7 @@ init 10 python:
     import logging
     class ASInventoryItem(object):
 
-        def __init__(self, itemId=None, name="Item", description="", canBeUsed=True, specialUseCase=None, canBeUsedOnce=False, imageName=ASInventories.bundleDir + "Resources/Item.png"):
+        def __init__(self, itemId=None, name="Предмет", description="", canBeUsed=True, specialUseCase=None, canBeUsedOnce=False, imageName=ASInventories.bundleDir + "Resources/Item.png"):
             self.name = name
             self.description = description
             self.canBeUsed = canBeUsed
