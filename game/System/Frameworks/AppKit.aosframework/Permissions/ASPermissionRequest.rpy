@@ -38,7 +38,7 @@ init screen ASPermissionRequest(bundleName="AS_APP_BUNDLE", requestingFor, onDec
             xsize 656
             spacing 16
 
-            text bundleName + " Would Like To " + AS_REQUIRE_PERMS_NAME[requestingFor]:
+            text bundleName + " хочет " + AS_REQUIRE_PERMS_NAME[requestingFor]:
                 style "ASPermissionRequestTitle"
             text AS_REQUIRE_PERMS_DESC[requestingFor]:
                 style "ASPermissionRequestDetail"
@@ -47,7 +47,7 @@ init screen ASPermissionRequest(bundleName="AS_APP_BUNDLE", requestingFor, onDec
                 xalign 0.5
                 spacing 100
 
-                textbutton _("Don't Allow") action onDeclineRequest:
+                textbutton _("Запретить") action onDeclineRequest:
                     style "ASPermissionRequestDeclinedButton"
-                textbutton _("Allow") action onAcceptRequest:
+                textbutton _("Разрешить") action onAcceptRequest:
                     style "ASPermissionRequestAcceptButton"

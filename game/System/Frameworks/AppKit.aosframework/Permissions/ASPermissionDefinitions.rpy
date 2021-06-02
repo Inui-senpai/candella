@@ -17,12 +17,12 @@ define AS_REQUIRES_SYSTEM_EVENTS = "REQ_SYSTEM_EVENTS"
 
 # MARK: OS permissions strings
 
-define AS_REQUIRE_NOTIFKIT_NAME = "Send Notifications"
-define AS_REQUIRE_NOTIFKIT_DESC = "Notifications may include banners, alerts, and sounds. These can be configured in App Manager."
-define AS_REQUIRE_FDA_NAME = "Access Your Files"
-define AS_REQUIRE_FDA_DESC = "File access may include your Home directory and your Candella installation. This can be configured in App Manager."
-define AS_REQUIRE_SYSEV_NAME = "Control Candella Settings"
-define AS_REQUIRE_SYSEV_DESC = "Settings access may include accessibility settings, system events, and preferences. This can be configured in App Manager."
+define AS_REQUIRE_NOTIFKIT_NAME = "Отправлять уведомления"
+define AS_REQUIRE_NOTIFKIT_DESC = "Уведомления могут включать в себя баннеры, предупреждения и звуки. Это можно настроить в Менеджере приложений."
+define AS_REQUIRE_FDA_NAME = "Доступ к файлам"
+define AS_REQUIRE_FDA_DESC = "Доступ к файлам может включать в себя вашу Домашнюю папку и директорию вашей установленной копии Candella. Это можно настроить в Менеджере приложений."
+define AS_REQUIRE_SYSEV_NAME = "Управлять настройками Candella"
+define AS_REQUIRE_SYSEV_DESC = "Доступ к настройкам может включать в себя параметры специальных возможностей, системные события и её конфигурацию. Это можно настроить в Менеджере приложений."
 
 # MARK: OS permissions enumerations
 

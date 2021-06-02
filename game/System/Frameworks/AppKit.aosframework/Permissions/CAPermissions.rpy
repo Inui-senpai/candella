@@ -12,8 +12,8 @@ init python:
     class CAPermission():
         """A data class that represents a permission for a Candella application."""
         key = "DEFAULT_PERM"
-        name = "Default Permission"
-        description = "A default permission."
+        name = "Стандартное разрешение"
+        description = "Стандартное разрешение."
         default_state = False
 
         def __init__(self, key, name, description, default=False):
@@ -35,29 +35,29 @@ init python:
     CA_PERMISSIONS = {
         "notifications": CAPermission(
             "REQ_NOTIFICATIONKIT",
-            "Send Notifications",
-            "Notifications may include banners, alerts, and sounds. These can be configured in App Manager."
+            "Отправлять уведомления",
+            "Уведомления могут включать в себя баннеры, предупреждения и звуки. Это можно настроить в Менеджере приложений."
         ),
         "file_system": CAPermission(
             "REQ_FULL_DISK",
-            "Access The File System",
-            "File access includes your user configuration file and may include other files present in Candella. This"
-                + " can be configured in App Manager."
+            "Доступ к файловой системе",
+            "Доступ к файлам включает в себя файл пользовательской конфигурации и может также включать в себя другие файлы, присутствующие в системе Candella. Это"
+                + " можно настроить в Менеджере приложений."
         ),
         "system_events": CAPermission(
             "REQ_SYSTEM_EVENTS",
-            "Control System Events",
-            "System events include login, shutdown, or user switching. This can be configured in App Manager."
+            "Управлять системными событиями",
+            "Системные события включают в себя вход в систему, завершение работы и смену пользователя. Это можно настроить в Менеджере приложений."
         ),
         "manage_users": CAPermission(
             "REQ_USERS_MANAGEMENT",
-            "Manage Users",
-            "User management includes adding, modifying, and removing users. This can be configured in App Manager."
+            "Управлять пользователями",
+            "Управление пользователями включает в себя добавление, изменение и удаление пользователей. Это можно настроить в Менеджере приложений."
         ),
         "virtual_platform": CAPermission(
             "REQ_METEORVM",
-            "Run Apps in a Virtual Environment",
-            "This app runs additional code in the Meteor VM platform. This can be configured in App Manager."
+            "Запускать приложения в виртуальном окружении",
+            "Это приложение запускает дополнительный код на платформе Meteor VM. Это можно настроить в Менеджере приложений."
         ),
 
     }
