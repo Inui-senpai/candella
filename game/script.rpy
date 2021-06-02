@@ -1,6 +1,7 @@
 # Run the bootloader.
 
 label splashscreen:
+    $ quick_menu = False
     $ roland.boot(loader="RolandGraphicalLogomarkLoader", minimum_load_time=3.0)
     return
 

@@ -30,13 +30,13 @@ define config.version = AS_SYS_INFO["VERSION"] if "AS_SYS_INFO" in vars() else "
 ## between paragraphs, write \n\n.
 
 define gui.about = _("""\
-© 2018-2021 Project Alice and Unscripted VN Team.
+© 2018-2021 Project Alice и Unscripted VN Team.
 
-Candella is a refreshed fork of the {a=https://aliceos.app}AliceOS{/a} operating environment.
+Candella – это обновлённый форк операционной среды {a=https://aliceos.app}AliceOS{/a}.
 
-Running the game as-is will let you demo some of Candella's features, such as the Desktop and userland applications.
+Запуск этой игры «как есть» даёт возможность продемонстрировать некоторые такие функции системы Candella, как рабочий стол и userland-приложения.
 
-AliceOS/Candella is free and open-source software, licensed under the BSD-2-Clause license.
+AliceOS/Candella является свободным программным обеспечением с открытым исходным кодом, лицензированным по условиям лицензии BSD-2-Clause.
 """)
 
 
@@ -168,7 +168,7 @@ init python:
         build.directory_name + "System",
         'zip',
         "candella_system",
-        description="Candella System Distributable"
+        description="Распространяемый пакет системы Candella"
     )
 
     build.archive("candella", "all candella_system")

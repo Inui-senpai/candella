@@ -248,14 +248,14 @@ screen quick_menu():
             xalign 0.5
             yalign 1.0
 
-            textbutton _("Back") action Rollback()
-            textbutton _("History") action ShowMenu('history')
-            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Save") action ShowMenu('save')
-            textbutton _("Q.Save") action QuickSave()
-            textbutton _("Q.Load") action QuickLoad()
-            textbutton _("Prefs") action ShowMenu('preferences')
+            textbutton _("Назад") action Rollback()
+            textbutton _("История") action ShowMenu('history')
+            textbutton _("Пропуск") action Skip() alternate Skip(fast=True, confirm=True)
+            textbutton _("Авто") action Preference("auto-forward", "toggle")
+            textbutton _("Сохранить") action ShowMenu('save')
+            textbutton _("Б. сохр.") action QuickSave()
+            textbutton _("Б. загр.") action QuickLoad()
+            textbutton _("Настройки") action ShowMenu('preferences')
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -296,7 +296,7 @@ screen navigation():
 
         if main_menu:
 
-            textbutton _("Open Desktop") action Start()
+            textbutton _("Откр.рабочий стол") action Start()
 
 #       else:
 #
@@ -314,13 +314,13 @@ screen navigation():
 #
         else:
 
-            textbutton _("Main Menu") action MainMenu()
+            textbutton _("Главное меню") action MainMenu()
 
-        textbutton _("Demo Halt") action Call("example_halt")
+        textbutton _("Демо останова") action Call("example_halt")
         
-        textbutton _("Rerun Setup") action Call("reset")
+        textbutton _("Перезагр.установ.") action Call("reset")
         
-        textbutton _("About") action ShowMenu("about")
+        textbutton _("О программе") action ShowMenu("about")
 
         if renpy.variant("pc"):
 
@@ -328,7 +328,7 @@ screen navigation():
             # textbutton _("Help") action ShowMenu("help")
 
             ## The quit button is banned on iOS and unnecessary on Android.
-            textbutton _("Quit") action Quit(confirm=not main_menu)
+            textbutton _("Выход") action Quit(confirm=not main_menu)
 
 
 style navigation_button is gui_button
@@ -468,7 +468,7 @@ screen game_menu(title, scroll=None):
 
     use navigation
 
-    textbutton _("Return"):
+    textbutton _("Назад"):
         style "return_button"
 
         action Return()
@@ -545,20 +545,20 @@ screen about():
     ## This use statement includes the game_menu screen inside this one. The
     ## vbox child is then included inside the viewport inside the game_menu
     ## screen.
-    use game_menu(_("About"), scroll="viewport"):
+    use game_menu(_("О программе"), scroll="viewport"):
 
         style_prefix "about"
 
         vbox:
 
             label "[config.name!t]"
-            text _("Version [config.version!t]\n")
+            text _("Версия [config.version!t]\n")
 
             ## gui.about is usually set in options.rpy.
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+            text _("Сделано на {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
 
 
 ## This is redefined in options.rpy to add text to the about screen.
@@ -1155,8 +1155,8 @@ screen confirm(message, yes_action, no_action):
                 xalign 0.5
                 spacing 100
 
-                textbutton _("Yes") action yes_action
-                textbutton _("No") action no_action
+                textbutton _("Да") action yes_action
+                textbutton _("Нет") action no_action
 
     ## Right-click and escape answer "no".
     key "game_menu" action no_action
@@ -1396,72 +1396,6 @@ style nvl_button:
 
 style nvl_button_text:
     properties gui.button_text_properties("nvl_button")
-
-
-
-################################################################################
-## Mobile Variants
-################################################################################
-
-style pref_vbox:
-    variant "medium"
-    xsize 450
-
-## Since a mouse may not be present, we replace the quick menu with a version
-## that uses fewer and bigger buttons that are easier to touch.
-screen quick_menu():
-    variant "touch"
-
-    zorder 100
-
-    hbox:
-        style_prefix "quick"
-
-        xalign 0.5
-        yalign 1.0
-
-        textbutton _("Back") action Rollback()
-        textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-        textbutton _("Auto") action Preference("auto-forward", "toggle")
-        textbutton _("Menu") action ShowMenu()
-
-
-style window:
-    variant "small"
-    background "gui/phone/textbox.png"
-
-style nvl_window:
-    variant "small"
-    background "gui/phone/nvl.png"
-
-style main_menu_frame:
-    variant "small"
-    background "gui/phone/overlay/main_menu.png"
-
-style game_menu_outer_frame:
-    variant "small"
-    background "gui/phone/overlay/game_menu.png"
-
-style game_menu_navigation_frame:
-    variant "small"
-    xsize 340
-
-style game_menu_content_frame:
-    variant "small"
-    top_margin 0
-
-style pref_vbox:
-    variant "small"
-    xsize 400
-
-style slider_pref_vbox:
-    variant "small"
-    xsize None
-
-style slider_pref_slider:
-    variant "small"
-    xsize 600
-
 
 
 
